@@ -10,7 +10,7 @@ object Main extends App {
 
   Http().bindAndHandleAsync(
     TickerServiceHandler(new TickerServiceImpl),
-    interface = "localhost",
+    interface = "127.0.0.1",
     port = 8080
   )
 }
